@@ -1,24 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kde-deus <kde-deus@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/14 03:32:07 by kde-deus          #+#    #+#             */
-/*   Updated: 2023/10/14 03:43:44 by kde-deus         ###   ########.fr       */
+/*   Created: 2023/10/28 15:19:44 by kde-deus          #+#    #+#             */
+/*   Updated: 2023/10/28 16:19:03 by kde-deus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 
-int main()
-{
-	printf("Hola me llamo Kaio");
-}
+# include <stdarg.h>
+# include <stdio.h>
+# include <unistd.h>
 
-// ESTUDIAR FUNCIONES VARIADICAS Y COMO RECOGER SUS ARGUMENTOS
-// printf -> return(int) -> numero de caracteres que has impreso
-// %s -> STRING (char *)
-// %c -> CARACTER (char)
-// %d -> DECIMALES (int)
+int ft_printf(char const *form_str, ...);
+
+#endif
